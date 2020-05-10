@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shyaboi/nodeclock/issues"
   },
-  "homepage": "https://github.com/shyaboi/nodeclock#readme"
+  "homepage": "https://github.com/shyaboi/nodeclock#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
