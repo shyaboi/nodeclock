@@ -2,14 +2,21 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
 const path = require("path");
+// var moment = require('moment');
+// var now = moment();
+
+// moment().format();
 
 let clock = 0;
 
 function clockTic() {
   clock++;
-  console.log(clock);
+  // console.log(clock);
 }
 
+function reload() {
+  
+}
 
 function html() {
   app.get("/", (req, res) => {
