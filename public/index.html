@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodeclock</title>
+</head>
+
+<body>
+    boiler
+    <script>let clock = 0;
+
+        function clockTic() {
+            clock++;
+            // console.log(clock);
+        }
+
+
+        function re() {
+            location.reload();
+        }
+
+        function html() {
+            res.send(``)
+                
+            }
+        function div() {
+            setInterval(() => {
+              clockTic();
+              re()
+              html()
+            }, 1000);
+            
+        }
+
+
+    </script>
+    <span id='clk'>${clock}</span>
+</body>
+<script src="./index.js"></script>
+</html>
