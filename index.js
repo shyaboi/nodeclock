@@ -26,18 +26,19 @@ function html() {
     res.send(`<span id='clk'>${clock}</span> 
     
     <script>
-            
-           
-            
-        
+    let clk = document.getElementById('clk')
     function re() {
-    location.reload();   
-    }
-    
-    setInterval(() => {
-        re()
-        console.log('ok')
-    }, 1000);
+      location.reload();   
+
+      clk.innerHTML = ${clock}
+      }
+      
+      setInterval(() => {
+          re()
+          console.log('ok')
+      }, 500);  
+            
+
     
     </script>`);
   });
